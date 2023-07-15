@@ -1,0 +1,59 @@
+:root {
+    --gradient: linear-gradient(90deg, #ee6352, purple, #ee6352);
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+.load{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    background-size: 300%;
+    background-image: var(--gradient);
+    animation-name: praval007;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.loading{
+    display: flex;
+    position: relative;
+    height: 80%;
+    width: 80%;
+    border: 30px solid rgb(97, 81, 222);
+    border-style:groove;
+    border-inline-color: var(--gradient);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    animation-name: praval;
+    animation-duration: 800ms;
+    animation-iteration-count:infinite
+}
+.loader{
+    font-family: fantasy;
+    font-size: 60px;
+    text-align: center;
+}
+.progress{
+    font-size: 60px;
+    padding-left: 15px;
+}
+
+@keyframes praval{
+    0%{background-image: linear-gradient(to bottom right, #FDABDD, #374A5A);}  
+    25%{background-image: linear-gradient(to bottom right, #38A2D7, #561139);}
+    50%{background-image: linear-gradient(to bottom right, #FFDB01, #0E197D);}
+    75%{background-image: linear-gradient(to bottom right, #0100EC, #FB36F4);}
+    100%{background-image: linear-gradient(to bottom right, #FF3E9D, #0E1F40);}
+    
+}
+@keyframes praval007 {
+    0% {background-position: left}
+  50% {background-position: right}
+  100% {background-position: left}  
+}
